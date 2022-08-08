@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome books</title>
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+            <h2 id='title'>Awesome Books</h2>
+            <ul id="navbar-ul">
+                <li><button id="list-btn" class="navbtn border-btn">List</button></li>
+                <li><button id='add-btn' class="navbtn border-btn">Add New</button></li>
+                <li><button id='contact-btn' class="navbtn">Contact</button></li>
+            </ul>
+    </nav>
+
+        <main>
+            <div class="input">
+                <div id="datediv">
+                    <p id="date"></p>
+                </div>
+                <div class="headtitle">
+                    <h1 id="add_book">Add a new book</h1>
+                </div>
+                <div class="app-container">
+                    <ul id="books-ul" class="nodisplay">
+                    </ul>
+                    <form id="add-form" class="display-form display">
+                        <input id="book-title" type="text" name="title" placeholder="Title" required>
+                        <br>
+                        <input id="book-author" type="text" name="author" placeholder="Author" required>
+                        <br>
+                        <button id="submit" type="submit">Add</button>
+                    </form>
+                    <div id="contact" class="contact nodisplay">
+                        <p>Do have any questions or you just want to say 'Hello'? <br> You can reach out to us!</p>
+                        <ul id="contact-list">
+                            <li class="itemscontact">Our e-mail: mail@mail.com</li>
+                            <li class="itemscontact">Our phone number 0045855334422</li>
+                            <li class="itemscontact">Our address: Streetname 22, 84503 City,  </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <p id="paragraph-footer">Copyright By Stanley & Daniel</p>
+        </footer>
+</body>
+
+</html>
