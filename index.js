@@ -19,6 +19,7 @@ button.addEventListener('click', (e) => {
   // COUNTER-TRACKER
   books.counter += 1;
 });
+
 // Local Storage Retrieval
 const mystorage = JSON.parse(localStorage.getItem('data').split(','));
 console.log(mystorage + " is the local storage");
