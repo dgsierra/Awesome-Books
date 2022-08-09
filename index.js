@@ -1,12 +1,27 @@
 import mytest from './modules/testing.js';
 mytest(20);
-import { list, listBtn, addBtn, contactBtn, texttest, contact, addForm, dateElement } from './modules/DOMElements.js';
+import { list, listBtn, addBtn, contactBtn, texttest, contact, addForm, dateElement, authorName, bookTitle, button } from './modules/DOMElements.js';
 import Collection from './modules/bookClass.js';
-// import addBooksEvents from './modules/addBooksEvents.js';
+import dataform from './modules/localStorage.js';
 export const books = new Collection();
+
+button.addEventListener('click', (e) => {
+  e.preventDefault();
+  const book = bookTitle.value;
+  const author = authorName.value;
+  books.addBook(book, author);
+  books.removeBook();
+  // RESET-VALUES
+  authorName.value = '';
+  bookTitle.value = '';
+  // LOCAL-STORAGE
+  dataform();
+  // COUNTER-TRACKER
+  books.counter += 1;
+});
 // Local Storage Retrieval
 const mystorage = JSON.parse(localStorage.getItem('data').split(','));
-console.log(mystorage);
+console.log(mystorage + " is the local storage");
 document.addEventListener('DOMContentLoaded', () => {
   mystorage.forEach((element) => {
     const { title, author } = element;
