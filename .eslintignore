@@ -1,0 +1,7 @@
+{
+    "ignorePatterns": [
+    "dist/",
+    "build/",
+    "node_modules/",
+    "module/luxor/**/*.js"]
+}
