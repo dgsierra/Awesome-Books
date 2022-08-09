@@ -1,9 +1,8 @@
 import { authorName, bookTitle, button } from './DOMElements.js';
 import dataform from './localStorage.js';
-import { books } from '../index.js';
+import { books } from './booksClassCall.js';
 
 export default () => {
-  console.log("This is a in the module addBooksEvents.js");
   button.addEventListener('click', (e) => {
     e.preventDefault();
     const book = bookTitle.value;
@@ -14,4 +13,5 @@ export default () => {
     books.counter += 1;
     authorName.value = '';
     bookTitle.value = '';
-  })};
+  });
+};

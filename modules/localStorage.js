@@ -1,7 +1,5 @@
-import { books } from '../index.js';
+import { books } from './booksClassCall.js';
 
 export default () => {
-    localStorage.setItem('data', JSON.stringify(books.bookArray)),
-    console.log(books.bookArray),
-    console.log("This is a in the module localStorage.js");
-  };
+  localStorage.setItem('data', JSON.stringify(books.bookArray));
+};
