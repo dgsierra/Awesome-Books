@@ -1,0 +1,21 @@
+{
+  "name": "awesome-books",
+  "version": "1.0.0",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet) # Awesome-Books A website that allows users to add/remove books from a list using JavaScript objects and arrays.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgonzalesi/Awesome-Books.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dgonzalesi/Awesome-Books/issues"
+  },
+  "homepage": "https://github.com/dgonzalesi/Awesome-Books#readme",
+  "type": "module"
+}
