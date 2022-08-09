@@ -15,3 +15,6 @@ export const addForm = document.getElementById('add-form');
 // Clock
 export const dateElement = document.getElementById('date');
 // END CLOCK
+// Local Storage Retrieval
+export const mystorage = JSON.parse(localStorage.getItem('data').split(','));
+// END LOCAL STORAGE RETRIEVAL

@@ -17,5 +17,8 @@
     "url": "https://github.com/dgonzalesi/Awesome-Books/issues"
   },
   "homepage": "https://github.com/dgonzalesi/Awesome-Books#readme",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "luxon": "^3.0.1"
+  }
 }
