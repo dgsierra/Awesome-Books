@@ -20,6 +20,8 @@
   },
   "ignorePatterns": [
     "dist/",
-    "build/"
+    "build/",
+    "node_modules/",
+    "module/luxor"
   ]
 }
